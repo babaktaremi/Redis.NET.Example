@@ -4,3 +4,22 @@ GET {{Redis.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+
+GET {{Redis.Api_HostAddress}}/redis/get-string?key=myRedisKey 
+Accept: application/json 
+
+###
+
+POST {{Redis.Api_HostAddress}}/redis/set-string
+Content-Type: application/json 
+
+{
+  "key":"myRedisKey",
+  "value":"myRedisValue"
+}
+
+###
+
+
+
